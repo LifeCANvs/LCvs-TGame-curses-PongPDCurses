@@ -2,6 +2,8 @@
 
 Pong in console, written in C++ using PDCurses.
 
+![Pong](https://github.com/wak-sudo/PongPDCurses/blob/main/screenshots/Pong.png)
+
 ## Controls
 
 **W** & **S** for player no. 1.
