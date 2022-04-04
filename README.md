@@ -12,7 +12,7 @@ Pong in console, written in C++ using PDCurses.
 
 ## How to build
 
-Build using Code::Blocks and .cbp file.
+Build using Code::Blocks and the .cbp file.
 
 ### Dependencies
 
