@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="PongPDCurses" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/pongPDCurses" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add directory="include" />
+				</Compiler>
+				<Linker>
+					<Add option="-O1" />
+					<Add library="pdcurses" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/pongPDCurses" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add directory="include" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add option="-static" />
+					<Add option="-l:pdcurses.a" />
+					<Add option="--verbose" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+			<Add directory="libs/PDCurses" />
+		</Compiler>
+		<Linker>
+			<Add directory="libs/PDCurses" />
+		</Linker>
+		<Unit filename="include/Pong.h" />
+		<Unit filename="include/pongBall.h" />
+		<Unit filename="include/pongPlayer.h" />
+		<Unit filename="main.cpp" />
+		<Unit filename="src/Pong.cpp" />
+		<Unit filename="src/bounceMechanic.cpp" />
+		<Unit filename="src/pongBall.cpp" />
+		<Unit filename="src/pongPlayer.cpp" />
+		<Extensions />
+	</Project>
+</CodeBlocks_project_file>
